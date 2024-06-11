@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Servicing Section</title>
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+    {{>navbar}}
+<section class="services">
+        <div class="service-card">
+            <div class="icon">
+                <img src="assets/IT-consulting.png" alt="IT Stratergy and Consulting">
+            </div>
+            <h3>IT Stratergy and Consulting</h3>
+            <p>IT Strategy and Consulting Services help organizations align their technology investments with their business goals. These services encompass a wide range of activities designed to optimize the performance, efficiency, and competitive advantage of a company through strategic technology planning and implementation.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">
+                <img src="assets/network-design.png" alt="Network Design and Manegament">
+            </div>
+            <h3>Network Design and Manegament</h3>
+            <p>Network Design and Management services encompass the planning, implementation, and maintenance of network infrastructures that ensure efficient, reliable, and secure communication within and between organizations.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">
+                <img src="assets/software-developer.jpg" alt="Software Development">
+            </div>
+            <h3>Software Development</h3>
+            <p>A software developer provides services that encompass the creation, development, deployment, and maintenance of software applications and systems. These professionals use programming languages and development tools to build software solutions tailored to meet the specific needs of businesses or individuals.</p>
+        </div>
+        <div class="service-card">
+            <div id="1">
+                <div class="icon">
+                    <img src="assets/technical-support.jpg" alt="Technical Support">
+                </div>
+                <h3>Technical Support</h3>
+                <p>Technical support services assist users in resolving issues with their technology products and services. These services can range from troubleshooting hardware and software problems to providing guidance on the usage of specific products.</p>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="icon">
+                <img src="assets/Cloud-Solutions.png" alt="Cloud Solutions">
+            </div>
+            <h3>Cloud Solutions</h3>
+            <p>Cloud solution providers offer a range of services over the internet, enabling businesses to access and utilize computing resources without the need for physical infrastructure, including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).</p>
+        </div>
+    </section>
+     <!-- footer -->
+    <footer>
+      <div class = "social-links">
+        <a href = "https://www.facebook.com/login/"><i class = "fab fa-facebook-f"></i></a>
+        <a href = "https://x.com/i/flow/login"><i class = "fab fa-twitter"></i></a>
+        <a href = "https://www.instagram.com/"><i class = "fab fa-instagram"></i></a>
+        <a href = "https://in.pinterest.com/login/"><i class = "fab fa-pinterest"></i></a>
+      </div>
+      <span>©2024 Azayd IT Consulting Services. All rights reserved</span>
+    </footer>
+    <!-- end of footer -->
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+            card.addEventListener('click', () => {
+                alert(`You clicked on ${card.querySelector('h3').textContent}`);
+            });
+        });
+    });
+    </script>
+</body>
+</html>

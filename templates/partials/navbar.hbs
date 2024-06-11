@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Responsive Navbar with Footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-3d2wSHCycRa0UKfwhikUaaFVUlo4VxOajZ4X6dStQ4kxzRQUyBhdm5ntH4Zbg3r4kzVgt1aKYADddEZ5TLF5CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="#">AZAYD</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/blogs">Blogs</a></li>
+            <li><a href="/careers">Career</a></li>
+        </ul>
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+   
+
+    <script >const mobileMenu = document.getElementById('mobile-menu');
+const navbar = document.querySelector('.navbar');
+
+mobileMenu.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
+</script>
+</body>
+</html>

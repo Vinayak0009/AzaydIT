@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Responsive Navbar with Footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-3d2wSHCycRa0UKfwhikUaaFVUlo4VxOajZ4X6dStQ4kxzRQUyBhdm5ntH4Zbg3r4kzVgt1aKYADddEZ5TLF5CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Add background image to showcase-content */
+        .showcase  {
+            background-image: url('home1.jpg'); /* Replace 'path/to/your/image.jpg' with your image path */
+            background-size: cover; /* Adjust background size */
+            background-position: center; /* Adjust background position */
+            color: #fff; /* Set text color to white or any contrasting color */
+            padding: 50px; /* Adjust padding as needed */
+            width: 1690px;
+            height: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="#">AZAYD</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/blogs">Blogs</a></li>
+            <li><a href="/careers">Career</a></li>
+        </ul>
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <body id="home">
+
+    <div class="showcase">
+        <!-- Showcase content Section -->
+        <div class="showcase-content"  >
+        
+            <h1>AZAYD <br>IT Consultancy <br>& Services</h1>
+            <p style="color: rgb(158, 165, 76);">We are boutique firm designed for Private Equity, Family Offices<br> and Growth Stage Companies seeking to maximize results.<br>
+            we provide technology solutions and strategic consulting, dedicated to empowering businesses through innovative IT strategies and cutting-edge technology.<br> Our team of seasoned experts specializes in a wide range of IT services designed to meet the unique needs of our clients,<br> from small startups to large enterprises.  
+            </p>
+            <button class="contact-button"><b>Contact Us</b></button> <!-- Added Contact Us button -->
+            
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="ServicesOverview">
+        <h2><b>Key Services</b></h2>
+        <section class="sec">
+        <p>
+            <br>
+            IT consultancy services offer a range of key services to help organizations optimize their technology use, enhance operational efficiency, and achieve business objectives. These services typically include:<br><br>
+            1.IT Strategy and Planning: Developing comprehensive IT strategies aligned with business goals, including technology roadmaps, digital transformation plans, and IT governance frameworks.<br><br>
+            2.Cybersecurity Services: Assessing and enhancing the security posture of an organization through risk assessments, vulnerability testing, compliance audits, and implementation of security measures.<br><br>
+            3.Cloud Services: Advising on cloud adoption, migration, and management strategies, including selecting appropriate cloud platforms (public, private, or hybrid) and optimizing cloud infrastructure.<br><br>
+            4.IT Infrastructure Management: Designing, implementing, and managing IT infrastructure, including networks, servers, storage, and data centers to ensure reliability, scalability, and performance.<br><br>
+        </p>
+        </section>
+    </div>
+    
+    {{!-- <main>
+        <div class="History">
+            <h2 > Company History</h2>
+             <pre> <p>
+		Founding and Early Years Azayd IT Consultancy Service Company was founded in 2024 by a group of visionary IT professionals with a shared passion for technology and innovation. 
+                The company's inception was driven by a desire to provide high-quality IT consulting services to businesses struggling with the rapidly evolving technological landscape.
+                The founders recognized a significant gap in the market for reliable and knowledgeable IT consultants who could help organizations navigate the complexities of digital transformation.</p>
+</pre></div>	
+	 </main> --}}
+     <br><br>
+    
+<div id="contact">
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="company-info">
+            <h2>Company Information</h2>
+            <p><strong>Email:</strong> azayd@company.com</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Physical Address:</strong></p>
+            <p>123 Business Road, <br> Suite 100, <br> City, State, ZIP Code</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="section__container">
+        <div class="header">
+            <p>TESTIMONIALS</p>
+            <h1>What our clients say about us.</h1>
+        </div>
+        <div class="testimonials__grid">
+            <div class="card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p>
+                    "Their cybersecurity expertise helped us identify vulnerabilities and implement robust solutions to safeguard our sensitive data. We're impressed by their professionalism, knowledge, and dedication to our success."
+                </p>
+                <hr />
+                <img src="assets/testimonial1.jpg" alt="user" />
+                <p class="name">Allan Collins</p>
+            </div>
+            <div class="card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p>
+                    "Their team provided invaluable guidance throughout the process, from planning to execution, ensuring minimal disruption to our operations. We're now reaping the benefits of improved scalability, flexibility, and cost savings."
+                </p>
+                <hr />
+                <img src="assets/testimonial2.jpg" alt="user" />
+                <p class="name">Clay Washington</p>
+            </div>
+            <div class="card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p>
+                    "Their strategic insights and technical expertise empowered us to modernize our IT infrastructure and leverage emerging technologies to drive innovation and stay ahead of the competition. We highly recommend their services to any organization seeking IT excellence."
+                </p>
+                <hr />
+                <img src="assets/testimonial3.jpg" alt="user" />
+                <p class="name">Tanya Grant</p>
+            </div>
+        </div>
+    </div>
+   <!-- footer -->
+    <footer>
+      <div class = "social-links">
+        <a href = "https://www.facebook.com/login/" target="_blank"><i class = "fab fa-facebook-f"></i></a>
+        <a href = "https://x.com/i/flow/login" target="_blank"><i class = "fab fa-twitter"></i></a>
+        <a href = "https://www.instagram.com/" target="_blank"><i class = "fab fa-instagram"></i></a>
+        <a href = "https://in.pinterest.com/login/" target="_blank"><i class = "fab fa-pinterest"></i></a>
+      </div>
+      <span>©2024 Azayd IT Consulting Services. All rights reserved</span>
+    </footer>
+    <!-- end of footer -->
+
+
+   
+<script>// Scroll to top button
+    const scrollUpBtn = document.querySelector('.scroll-up-btn');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollUpBtn.classList.add('show');
+        } else {
+            scrollUpBtn.classList.remove('show');
+        }
+    });
+    
+    scrollUpBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    </script> 
+</body>
+</html>

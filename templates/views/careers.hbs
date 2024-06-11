@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Opportunities</title>
+    <link rel="stylesheet" href="css/careers.css">
+</head>
+<body>
+{{>navbar}}
+    <header>
+        <h1>Join Our Team</h1>
+        <p>Explore our career opportunities and learn more about our company culture.</p>
+    </header>
+    <div id="job-openings">
+        <section >
+            <h2>Job Openings</h2>
+            <div class="job-listing">
+                <img src="assets/software-engineer (1).svg" alt=""/>
+                <h3>Software Engineer</h3>
+                <p>Description: We are looking for a skilled software engineer to join our dynamic team.We are seeking a talented and motivated Software Engineer to join our dynamic team. The successful candidate will play a key role in the design, development, and maintenance of our software products. From conceptualization to deployment, you will have the opportunity to work on cutting-edge projects that drive innovation and make a real difference.
+                </p>
+                <button onclick="applyNow('Software Engineer')">Apply Now</button>
+            </div>
+            <div class="job-listing">
+                <img src="assets/project-manager.svg" alt=""/>
+                <h3>Project Manager</h3>
+                <p>Description: We need a passionate product manager to drive our product vision.We are seeking an experienced and highly organized Project Manager to join our team. As a Project Manager, you will be responsible for overseeing the planning, implementation, and execution of various projects within our organization. The ideal candidate will have excellent leadership skills, a strong ability to multitask, and a proven track record of delivering projects on time and within budget. </p>
+                <button onclick="applyNow('Project Manager')">Apply Now</button>
+            </div>
+            <div class="job-listing">
+                <img src="assets/sales-representative.svg" alt=""/>
+                <h3>Cloud Architect</h3>
+                <p>Description: We are looking for a skilled software engineer to join our dynamic team.We are seeking an experienced and highly skilled Cloud Architect to join our dynamic IT team. The ideal candidate will be responsible for designing, developing, and managing our organization’s cloud computing strategy and infrastructure.</p>
+                <button onclick="applyNow('Sales Representative')">Apply Now</button>
+            </div>
+            <div class="job-listing">
+                <img src="assets/marketing-manager.svg" alt=""/>
+                <h3>Marketing Manager</h3>
+                <p>Description: Are you a dynamic and results-driven marketing professional with a passion for developing and executing innovative marketing strategies? We are seeking a talented Marketing Manager to join our team and drive our brand's growth and success.We are looking for a skilled software engineer to join our dynamic team.</p>
+                <button onclick="applyNow('Marketing Manager')">Apply Now</button>
+            </div>
+            <div class="job-listing">
+                <img src="assets/data-scientist.svg" alt=""/>
+                <h3>Database Analyst</h3>
+                <p>Description: We are looking for a skilled software engineer to join our dynamic team.
+                    We are seeking a highly skilled and motivated Database Scientist to join our dynamic team. The ideal candidate will have a strong background in database management, data analytics, and data science. As a Database Scientist, you will be responsible for designing, implementing, and optimizing our data infrastructure, as well as analyzing large datasets to extract actionable insights.
+                </p>
+                <button onclick="applyNow('Database Scietist')">Apply Now</button>
+            </div>
+        </section></div>
+<br><br>
+        <div id="company-culture">
+            <h2>Company Culture</h2>
+            <BR></BR>
+            <p>At Azayd, we pride ourselves on fostering a vibrant, inclusive, and innovative workplace. Our company culture is built on the following core principles:<br>
+            1.Innovation: We encourage creativity and the exploration of new ideas. Every team member is empowered to think outside the box and contribute to groundbreaking solutions.<br>
+            2.Integrity: Honesty and transparency are at the heart of everything we do. We believe in doing the right thing, even when no one is watching.<br>
+            3.Teamwork: Collaboration is key to our success. We promote a supportive and cooperative environment where everyone's contributions are valued.<br>
+            4.Customer Focus: Our customers are our top priority. We strive to exceed their expectations and deliver exceptional value in every interaction.<br>
+            <br>
+            <br>
+            </p>
+            </div>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>©2024 Azayd IT Consulting Services. All rights reserved.</p>
+    </footer>
+    {{!-- <script src="js/careers.js"></script> --}}
+    <script>
+        const jobs = [
+    {
+      title: "Software Engineer",
+      image: "images/software-engineer.svg",
+      details:
+        "Responsible for designing, developing and maintaining software systems and applications.",
+      openPositions: "2",
+      link: "#",
+    },
+  
+    {
+      title: "Data Scientist",
+      image: "images/data-scientist.svg",
+      details:
+        "Responsible for collecting, analyzing and interpreting large data sets to help organizations make better decisions.",
+      openPositions: "3",
+      link: "#",
+    },
+  
+    {
+      title: "Project Manager",
+      image: "images/project-manager.svg",
+      details:
+        "Responsible for planning, executing and closing projects on time and within budget.",
+      openPositions: "1",
+      link: "#",
+    },
+  
+    {
+      title: "Product Manager",
+      image: "images/product-manager.svg",
+      details:
+        "Responsible for managing the entire product life cycle, from ideation to launch and post-launch maintenance.",
+      openPositions: "1",
+      link: "#",
+    },
+  
+    {
+      title: "Sales Representative",
+      image: "images/sales-representative.svg",
+      details:
+        "Responsible for reaching out to potential customers and closing sales deals.",
+      openPositions: "4",
+      link: "#",
+    },
+  
+    {
+      title: "Marketing Manager",
+      image: "images/marketing-manager.svg",
+      details:
+        "Responsible for creating and executing marketing strategies to promote a company or product.",
+      openPositions: "1",
+      link: "#",
+    },
+  ];
+  
+  const jobsHeading = document.querySelector(".jobs-list-container h2");
+  const jobsContainer = document.querySelector(".jobs-list-container .jobs");
+  const jobSearch = document.querySelector(".jobs-list-container .job-search");
+  
+  let searchTerm = "";
+  
+  if (jobs.length == 1) {
+    jobsHeading.innerHTML = `${jobs.length} Job`;
+  } else {
+    jobsHeading.innerHTML = `${jobs.length} Jobs`;
+  }
+  
+  const createJobListingCards = () => {
+    jobsContainer.innerHTML = "";
+  
+    jobs.forEach((job) => {
+      if (job.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+        let jobCard = document.createElement("div");
+        jobCard.classList.add("job");
+  
+        let image = document.createElement("img");
+        image.src = job.image;
+  
+        let title = document.createElement("h3");
+        title.innerHTML = job.title;
+        title.classList.add("job-title");
+  
+        let details = document.createElement("div");
+        details.innerHTML = job.details;
+        details.classList.add("details");
+  
+        let detailsBtn = document.createElement("a");
+        detailsBtn.href = job.link;
+        detailsBtn.innerHTML = "More Details";
+        detailsBtn.classList.add("details-btn");
+  
+        let openPositions = document.createElement("span");
+        openPositions.classList.add("open-positions");
+  
+        if (job.openPositions == 1) {
+          openPositions.innerHTML = `${job.openPositions} open position`;
+        } else {
+          openPositions.innerHTML = `${job.openPositions} open positions`;
+        }
+  
+        jobCard.appendChild(image);
+        jobCard.appendChild(title);
+        jobCard.appendChild(details);
+        jobCard.appendChild(detailsBtn);
+        jobCard.appendChild(openPositions);
+  
+        jobsContainer.appendChild(jobCard);
+      }
+    });
+  };
+  
+  createJobListingCards();
+  
+  jobSearch.addEventListener("input", (e) => {
+    searchTerm = e.target.value;
+  
+    createJobListingCards();
+  });
+  
+    </script>
+</body>
+</html>
