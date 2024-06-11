@@ -1,2 +1,2 @@
 # AzaydIT
-My first mini project
+My first mini project on web
